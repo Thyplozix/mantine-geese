@@ -1,9 +1,12 @@
-import { MantineProvider, Text } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
+import Grid from "./Grid";
+import Nav from "./Nav";
 
 export default function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Text>Welcome to Mantine!</Text>
+      <Nav/>
+      <Grid/>
     </MantineProvider>
   );
 }
